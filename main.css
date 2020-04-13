@@ -1,12 +1,12 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: 'Oswald', sans-serif;
 }
 
-.image{
+.image {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -15,7 +15,7 @@ body{
   margin-top: 50px;
 }
 
-.profile-photo{
+.profile-photo {
   float: left;
   width: 120px;
   margin-top: 32px;
@@ -24,13 +24,13 @@ body{
   border-radius: 5px;
 }
 
-.header-image{
+.header-image {
   margin-left: auto;
   margin-right: auto;
-  width: 25%
+  width: 25%;
 }
 
-nav{
+nav {
   position: absolute;
   top: 0%;
   left: 0%;
@@ -40,34 +40,34 @@ nav{
   color: white;
 }
 
-li{
+li {
   list-style: none;
 }
 
-.nav-list{
+.nav-list {
   width: 20%;
   float: left;
 }
 
-h1{
-    text-align: center;
-    margin-top: 70%;
-    font-family: neon-stream, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4em;
+h1 {
+  text-align: center;
+  margin-top: 70%;
+  font-family: neon-stream, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4em;
 }
 
-h2{
+h2 {
   margin-left: 20px;
 }
 
-.appLink{
+.appLink {
   font-size: 3em;
   margin-bottom: 2em;
 }
 
-footer{
+footer {
   display: flex;
   background-color: black;
   width: 100%;
@@ -79,19 +79,19 @@ footer{
   color: white;
 }
 
-.project-details p{
+.project-details p {
   display: inline;
   line-height: 40px;
 }
 
 /* Non-mobile, grid */
-@media only screen and (min-width: 850px){
-  h1{
+@media only screen and (min-width: 850px) {
+  h1 {
     text-align: center;
     margin-top: 15%;
   }
-  
-  section{
+
+  section {
     font-size: 20px;
     text-align: center;
     padding: 0% 20%;
@@ -99,37 +99,35 @@ footer{
     margin-bottom: 50px;
   }
 
- 
-  
-  h2{
+  h2 {
     width: 25%;
   }
 
-  nav ul li{
+  nav ul li {
     text-align: right;
     width: 20%;
     padding: 0% 5%;
   }
-    
-  nav div ul:hover{
+
+  nav div ul:hover {
     cursor: pointer;
   }
-  
-  .nav-list{
+
+  .nav-list {
     display: flex;
     width: 75%;
   }
-  
-  img{
+
+  img {
     display: block;
   }
-  
-  .header-image{
+
+  .header-image {
     margin-left: auto;
     margin-right: auto;
   }
-  
-  .image{
+
+  .image {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -137,14 +135,13 @@ footer{
     margin-bottom: 20px;
     margin-top: 50px;
   }
-  
-  .section-header{
+
+  .section-header {
     display: inline;
     text-align: center;
-    
   }
-  
-  nav{
+
+  nav {
     position: absolute;
     top: 0%;
     left: 0%;
@@ -153,16 +150,95 @@ footer{
     background-color: black;
     color: white;
   }
-  .github-link {
-      width: 9em;
-      height 7em;
+  .appLink {
+    width: 9em;
+    height: 7em;
   }
-  ul{
+  ul {
     display: flex;
     width: 100%;
   }
 
-  .project-details{
+  .project-details {
     display: block;
+  }
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  footer {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 4em;
+  }
+
+  .mailto {
+    font-size: 2em;
+    color: white;
+  }
+
+  .appLink {
+    width: 4em;
+    height: 2em;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  footer {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 4em;
+  }
+
+  .mailto {
+    font-size: 2em;
+    color: white;
+  }
+  .appLink {
+    width: 4em;
+    height: 2em;
+  }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  footer {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 1em;
+  }
+
+  .mailto {
+    font-size: 0.5em;
+    color: white;
+  }
+  .appLink {
+    width: 4em;
+    height: 2em;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  footer {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 2em;
+  }
+
+  .mailto {
+    font-size: 1em;
+    color: white;
+  }
+  .appLink {
+    width: 4em;
+    height: 2em;
   }
 }
